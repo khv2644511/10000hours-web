@@ -34,10 +34,17 @@
     }
 }
 
+h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
 body {
     font-family: 'Noto Sans KR';
     background-color: #5B2386;
-    margin: 20px auto;
+    margin: auto;
     position: fixed;
     position: relative;
 
@@ -53,14 +60,7 @@ body {
 }
 
 #app {
-
-}
-
-.tit-img {
-    position: relative;
-    width: 584px;
-    height: 112px;
-    z-index: 2;
+    margin: 0 auto;
 }
 
 .tit-timelaw {
@@ -68,6 +68,13 @@ body {
     width: 800px;
     margin: 120px auto;
     text-align: center;
+}
+
+.tit-img {
+    position: relative;
+    width: 584px;
+    height: 112px;
+    z-index: 2;
 }
 
 .clock-img {
@@ -83,15 +90,17 @@ body {
 
 
 .img-txt {
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     left: 50%;
+    top: 50px;
     transform: translate(-50%, -50%);
     width: 486px;
 }
 
 .desc {
     width: 486px;
-    margin: 300px auto;
+    margin: 200px auto;
     text-align: center;
     position: relative;
 }
@@ -110,6 +119,7 @@ strong {
     line-height: 24px;
 } 
 
+
 .txt-desc {
     width: 373px;
     height: 85px;
@@ -126,7 +136,7 @@ strong {
 
 .cont-inp {
 
-    margin: 400px auto 0px;
+    margin: 350px auto 10px;
     text-align: center;
     position: relative;
     color: #FFFFFF;
@@ -172,6 +182,23 @@ strong {
     
 }
 
+.loading {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 63%;
+    transform: translate(-50%);
+    text-align: center;
+    /* background-color: white; */
+}
+.loading_img {
+    /* display: none; */
+    transition: all 4s;
+}
+.loading_img:hover {
+    transform : rotate(980deg)
+}
+
 .cont-result {
     margin: 250px auto 0px;
     text-align: center;
@@ -194,7 +221,7 @@ strong {
 
 .go {
     position: relative;
-    margin: 100px auto;
+    margin: 150px auto;
     
 
 }
