@@ -28,20 +28,20 @@
                     </p>
                 </div>
                 
-                <form class="cont-inp">
+                <form class="cont-inp" action="" method="get" id="form">
                     <div class="input_txt">
                         <p class="txt-wannabe">
                             나는
-                            <input class="input_field" type="text" placeholder="예)프로그래밍" required> 전문가가 될 것이다.
+                            <input id="field" class="input_field" type="text" placeholder="예)프로그래밍" required> 전문가가 될 것이다.
                         </p>
                         <p class="txt-time">
                             그래서 앞으로 매일 하루에
-                            <input class="input_time" type="number" placeholder="예)5시간" required> 시간씩 훈련할 것이다.
+                            <input id="time" class="input_time" type="number" placeholder="예)5시간" required> 시간씩 훈련할 것이다.
                         </p>
                     </div>
                 
                     <div class="result-btn">
-                        <button class="btn-exc btn">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+                        <button class="btn-exc btn" type="button" onclick="calc">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
                         <img class="finger-click" src="/img/click.png" alt="검지로 클릭하기">
                     </div>
                 </form>
