@@ -44,34 +44,32 @@
 }
 
 
-body {
+body, html {
+    width: 100vw;
+    height: 100vh;
     background-color: #5B2386;
     font-family: 'Noto Sans KR';
-    /* margin: auto; */
-    /* position: fixed; */
-    /* position: relative; */
-
 }
 
 .wrapper {
-    margin: 0 auto;
-    text-align: center;
+    /* text-align: center; */
     color: #FFFFFF;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px;
     /* margin: 20px 0; */
 }
 
-
+/* 시계 이미지 뒤로 보내기 해결하기 */
 .header {
-    width: 600px;
     position: relative;
-    margin: 150px auto;
-    text-align: center;
+    margin: 70px;
 }
 
-
 .tit-img {
-    width: 584px;
+    width: 564px;
     height: 112px;
     /* z-index: 20; */
 }
@@ -86,24 +84,40 @@ body {
     /* z-index: 1; */
 }
 
+.contents {
+    /* height: 900px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.desc {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 486px;
+}
+
 .img-txt {
     width: 486px;
     height: 40px;
 }
 
-.desc {
-    position: relative;
-    width: 486px;
-    margin: 150px auto;
-    text-align: center;
-}
-
 .img-quotes {
     width: 493px;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+    position: relative;
+    top: 30px;
+}
+
+.txt-desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
 }
 
 strong {
@@ -112,25 +126,11 @@ strong {
     line-height: 24px;
 } 
 
-
-.txt-desc {
-    width: 373px;
-    height: 85px;
-
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    color: #FFFFFF;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .cont-inp {
-    /* margin: 350px auto 10px; */
-    /* text-align: center; */
-    position: relative;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     font-size: 24px;
     line-height: 70px;
     font-weight: 400px;
@@ -149,41 +149,48 @@ strong {
 }
 
 .input_txt {
-    margin: 100px;
+}
+
+input:focus {
+    border: 10px solid #af7cd7;
+    color: black;
 }
 
 .result-btn {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #5B2386;
+    border-radius: 56px;
+    height: 66px;
+    padding: 10px;
 }
 
 .btn-exc {
-    /* position: relative; */
-    /* top: 113px; */
-    width: 565px;
-    height: 66px;
-    border-radius: 56px;
     background-color: #FCEE21;
     color: #5B2386;
-    font-Weight: 700;
-    font-size: 24px;
-    line-height: 24px;
-    vertical-align: top;
 }
 
-/* 화면 줄일 때 이미지 사라지지 않기 위해 absolute를 사용하지 한고 vertical-align으로 배치함 */
 .finger-click {
-    /* position: absolute; */
-    /* top: 15px; */
+    position: relative;
+    top: 17px;
 }
 
 .loading {
-    display: block;
+    /* display: block;
     position: absolute;
     left: 50%;
     top: 63%;
     transform: translate(-50%);
-    text-align: center;
+    text-align: center; */
     /* background-color: white; */
 }
 .loading_img {
@@ -195,12 +202,17 @@ strong {
 }
 
 .cont-result {
-    margin: 100px auto;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
 }
 
 .txt-wannabe, .txt-time {
     font-size: 24px;
-    line-height: 50px;
+    line-height: 80px;
     font-weight: 400px;
 }
 
@@ -212,16 +224,7 @@ strong {
 }
 
 .go {
-    margin: 100px auto;
-}
-
-.btn-go, .btn-share {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 24px;
-    color: #5B2386;
-    border-radius: 56px;
-    height: 66px;
+    /* margin: 100px auto; */
 }
 
 .btn-go {
@@ -235,6 +238,11 @@ strong {
 }
 
 .cont-footer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -247,7 +255,6 @@ strong {
     font-size: 12px;
     line-height: 17.38px;
     color: #FFFFFF;
-    margin-bottom: 100px;
     font-family: 'Noto Sans KR';
 }
 
