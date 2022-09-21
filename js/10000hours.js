@@ -1,10 +1,11 @@
+// modal 노출
 const modal = document.querySelector('.cont-modal');
 const btnOpenPopup = document.querySelector('.btn-go');
 const btnClosePopup = document.querySelector('.close-area');
 
 btnOpenPopup.addEventListener('click', () => {
     modal.style.display = 'flex';
-  // modal.classList.toggle('active');
+  modal.classList.toggle('active');
 });
 
 btnClosePopup.addEventListener('click', () => {
@@ -12,9 +13,20 @@ btnClosePopup.addEventListener('click', () => {
 })
 
 
+
+
 // input 값 가져오기
-// const value_field = document.getElementById('field').value;
-// const value_time = document.getElementById('time').value;
+// var wannabe_field = $('#field').val();
+// var try_time = $('time').val();
+// $(document).ready(function(){
+//   $('#btn-exc').click() {
+//     if (key.keyCode == 13) {
+//       alert('엔터키');
+//     }
+//   };
+
+
+
 
 
 // 나는 며칠 동안 훈련해야 1만 시간이 될까 버튼 클릭 후
